@@ -1,6 +1,3 @@
-Here's a polished and organized version of your `README.md`, styled for maximum clarity, modern flair, and recruiter/demo appeal using visual emojis, collapsible sections, and structured formatting:
-
----
 
 # 🛒 End-to-End E-commerce Sales Analysis with dbt, Snowflake, and Python
 
