@@ -9,4 +9,4 @@ select
     unitprice as price_per_unit,
     customerid as customer_id,
     country
-from {{ source('ECOMMERCE_DB', 'STAGING', 'raw_orders') }}
+from ECOMMERCE_DB.STAGING.raw_orders

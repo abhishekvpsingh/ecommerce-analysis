@@ -19,3 +19,9 @@ models:
         data_tests:
           - unique
           - not_null
+
+  - name: stg_orders
+    description: "A staging models for orders"
+    columns:
+      - name: order_id
+
