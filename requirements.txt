@@ -17,6 +17,7 @@ dbt-extractor==0.6.0
 dbt-semantic-interfaces==0.7.4
 dbt-snowflake==1.9.2
 deepdiff==7.0.1
+et_xmlfile==2.0.0
 filelock==3.18.0
 idna==3.10
 importlib-metadata==6.11.0
@@ -35,6 +36,7 @@ more-itertools==10.6.0
 msgpack==1.1.0
 networkx==3.4.2
 numpy==2.2.4
+openpyxl==3.1.5
 ordered-set==4.1.0
 packaging==24.2
 pandas==2.2.3
