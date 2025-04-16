@@ -1,8 +1,8 @@
 
 
-# 🛒 End-to-End E-commerce Sales Analysis with dbt, Snowflake, and Python.
 
-> 🚀 A complete, production-style data pipeline project showcasing your skills in **Python**, **Snowflake**, and **dbt** .
+> 🚀 A complete, production-style data pipeline project showcasing your skills in **Python**, **Snowflake**, and **dbt**.
+
 
 ---
 
