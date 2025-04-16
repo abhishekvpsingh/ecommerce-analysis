@@ -1,7 +1,7 @@
 
 
 
-> 🚀 A complete, production-style data pipeline project showcasing your skills in **Python**, **Snowflake**, and **dbt**.
+> 🚀 A data pipeline project in **Python**, **Snowflake**, and **dbt**.
 
 
 ---
