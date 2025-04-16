@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+{{ config(materialized='view', alias='stage_oreders') }}
 
 select
     invoiceno as order_id,

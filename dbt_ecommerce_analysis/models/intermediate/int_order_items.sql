@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+{{ config(materialized='view', alias='transformed_orders') }}
 
 select
     order_id,
