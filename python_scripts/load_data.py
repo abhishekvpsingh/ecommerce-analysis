@@ -9,8 +9,10 @@ SNOWFLAKE_PASSWORD = "fj2i7e85uRCtm3e"
 SNOWFLAKE_DATABASE = "ECOMMERCE_DB"
 SNOWFLAKE_SCHEMA = "STAGING"
 SNOWFLAKE_WAREHOUSE = "ECOMMERCE_WH"  # Or your preferred warehouse
-CSV_FILE_PATH = "../data/online_retail.csv"
+#CSV_FILE_PATH = "../data/online_retail.csv"
 TABLE_NAME = "raw_orders"  # Name of your staging table
+DATA_DIR = "../data/" #added data directory
+
 
 def connect_to_snowflake():
     try:
@@ -78,6 +80,9 @@ if __name__ == "__main__":
     snowflake_conn = connect_to_snowflake()
     if snowflake_conn:
         create_staging_table(snowflake_conn)
-        upload_csv_to_stage(snowflake_conn, CSV_FILE_PATH, TABLE_NAME)
+        csv_file_path = os.path.join(DATA_DIR, "online_retail.csv") #default
+        if not os.path.exists(csv_file_path):
+            csv_file_path = os.path.join(DATA_DIR, "simulated_retail.csv") #check for simulated
+        upload_csv_to_stage(snowflake_conn, csv_file_path, TABLE_NAME)
         load_csv_to_snowflake(snowflake_conn, TABLE_NAME)
         snowflake_conn.close()
